@@ -1,0 +1,14 @@
+{
+  "app": {
+    "title":"YOUOR",
+    "index": "index",
+    "panent": "panent",
+    "login": "login",
+    "register": "register"
+  },
+  "index": {
+    "classify": "classify",
+    "trend": "trend",
+    "more": "more"
+  }
+}

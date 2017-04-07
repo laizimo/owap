@@ -1,0 +1,19 @@
+.patent-tags{
+  margin-top: 50px;
+}
+
+.patent-tags .tags ul li{
+  height: 36px;
+}
+
+.patent-tags .tags ul li a{
+  color: rgb(51,51,51);
+}
+
+.patent-content .title {
+  margin-top: 20px;
+}
+
+.tags{
+  margin-top: 20px;
+}

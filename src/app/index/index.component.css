@@ -1,0 +1,84 @@
+#myCarousel{
+  width: 650px;
+  height: 366px;
+  margin:10px auto;
+  margin-left: 50px;
+}
+
+.bottom{
+  bottom: 0px;
+}
+
+.main-container{
+  width: 400px;
+  height: 366px;
+}
+.patent-classify{
+  width: 400px;
+  height: 316px;
+  margin:10px auto;
+  margin-left: 50px;
+}
+
+.patent-classifyTitle{
+  border-bottom:1px solid lightgray;
+}
+
+.patent{
+  width: 100px;
+  margin-top:5px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 5px;
+}
+
+.main-container .row .footer{
+  margin-left: 50px;
+  background: lightgray;
+}
+
+
+.main-container .row .footer .icon{
+  width: 20px;
+  height: 20px;
+}
+
+.main-container .row .footer .trend{
+  font-size: 14px;
+  margin-left: 10px;
+  margin-top: 5px;
+}
+
+.patent-list{
+  height: 50px;
+  line-height: 50px;
+  border-bottom: 1px solid lightgray;
+}
+
+.first{
+  margin-top: 50px;
+}
+
+.patent-list span{
+  margin-top: 15px;
+}
+
+.patent-list .title{
+  margin-top: 10px;
+  margin-left: 5px;
+}
+
+.patent-image{
+  width: 180px;
+  height: 101px;
+  margin: 10px 20px 20px 10px;
+}
+
+.body-container{
+  margin-top: 100px;
+}
+
+.content{
+  width: 1200px;
+  margin: 0px auto;
+}

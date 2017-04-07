@@ -1,0 +1,71 @@
+<!--顶部导航-->
+
+<div class="header">
+  <div class="container header-container">
+    <div class="row">
+      <div class="col-sm-5">
+        <div class="pull-left">
+          <a href="/"><img src="assets/images/logo.gif" class="logo"></a>
+        </div>
+      </div>
+      <div class="col-sm-7 user_area">
+        <div *ngIf="!currentUser?.username" class="pull-right">
+          <a class="btn" (click)="login_open();">{{'app.login' | translate}}</a>
+          <a href="#" class="btn">{{'app.register' | translate}}</a>
+        </div>
+        <div *ngIf="currentUser?.username" class="pull-right">
+          <ul>
+            <li>
+              <a href="#" class="btn">欢迎你:{{currentUser?.username}}</a>
+            </li>
+            <li>
+              <a href="#" class="btn">个人管理</a>
+            </li>
+            <li>
+              <a href="javascript:void(0);" (click)="doLogout()" class="btn">退出</a>
+            </li>
+          </ul>
+        </div>
+        <form class="navbar-form pull-right" id="search" role="form">
+          <div class="search">
+            <span class="glyphicon glyphicon-search"></span>
+            <input type="search" name="search" class="input" placeholder="search" hidden>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="row">
+      <ul class="nav navbar-nav main-nav">
+        <li class="dropdown nav-dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">作品<span class="glyphicon glyphicon-chevron-down"></span></a>
+          <ul class="dropdown-menu nav-dropdown-menu col-sm-1">
+            <li>
+              <a href="#" class="btn">作品1</a>
+            </li>
+            <li>
+              <a href="#" class="btn">作品1</a>
+            </li>
+          </ul>
+        </li>
+        <li class="dropdown nav-dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">排行榜AAAAAAAASA<span class="glyphicon glyphicon-chevron-down"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#" class="btn">作品1</a></li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav main-nav navbar-right">
+        <li class="right-navbar">
+          <a href="#" class="btn">供应商入驻</a>
+        </li>
+        <li class="right-navbar">
+          <a href="#" class="btn"><span class="glyphicon glyphicon-heart"></span>我喜欢</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<router-outlet></router-outlet>
+
+

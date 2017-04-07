@@ -1,0 +1,50 @@
+.patent-list{
+  margin:0px;
+  padding: 0px;
+  display: block;
+  list-style: none;
+}
+
+.patent-list .patent-row{
+  height: 322px;
+  margin-left: 0px;
+  list-style: none;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.patent-list .patent-row .patent-cover{
+  height: 322px;
+  position: relative;
+  top: 0px;
+  left: 0;
+  display: inline-block;
+}
+
+.patent-list .patent-row .patent-cover .images{
+  height: 322px;
+}
+
+.patent-list .patent-row .patent-cover .patent-desc{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: rgba(0,0,0,.4);
+  text-align: center;
+  z-index: -1;
+  color: white;
+}
+
+.patent-list .patent-row .patent-cover .patent-desc h3{
+  position: relative;
+  margin: 150px auto 30px;
+}
+
+.patent-list .patent-row .patent-cover .patent-desc img{
+  width: 40px;
+  display: block;
+  position: relative;
+  margin:10px auto;
+}

@@ -1,0 +1,32 @@
+<div class="top">
+  <div id="myCarousel" class="carousel slide pull-left">
+    <!-- 轮播（Carousel）指标 -->
+    <ol class="carousel-indicators bottom">
+      <li data-target="#myCarousel" data-slide-to="0" [class.active] = "currentPage == 0" (click)="changebanner(0)"></li>
+      <li data-target="#myCarousel" data-slide-to="1" [class.active] = "currentPage == 1" (click)="changebanner(1)"></li>
+      <li data-target="#myCarousel" data-slide-to="2" [class.active] = "currentPage == 2" (click)="changebanner(2)"></li>
+      <li data-target="#myCarousel" data-slide-to="3" [class.active] = "currentPage == 3" (click)="changebanner(3)"></li>
+    </ol>
+    <!-- 轮播（Carousel）项目 -->
+    <div class="carousel-inner">
+      <div class="item" [class.active] = "currentPage == 0">
+        <img src="assets/images/1488514361329840912.jpg" alt="First slide">
+      </div>
+      <div class="item" [class.active] = "currentPage == 1">
+        <img src="assets/images/1488858362139378323.jpg" alt="Second slide">
+      </div>
+      <div class="item" [class.active] = "currentPage == 2">
+        <img src="assets/images/1489115721918439478.jpg" alt="Third slide">
+      </div>
+      <div class="item" [class.active] = "currentPage == 3">
+        <img src="assets/images/1489457869183275485.jpg" alt="Third slide">
+      </div>
+    </div>
+    <div class="carousel-left">
+      <img src="assets/images/index-arrL-a.png" (click)="left()">
+    </div>
+    <div class="carousel-right">
+      <img src="assets/images/index-arrR-a.png" (click)="right()">
+    </div>
+  </div>
+</div>

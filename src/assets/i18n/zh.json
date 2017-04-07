@@ -1,0 +1,14 @@
+{
+  "app": {
+    "title":"YOUOR",
+    "index": "首页",
+    "panent": "作品",
+    "login": "登录",
+    "register": "注册"
+  },
+  "index": {
+    "classify": "作品分类",
+    "trend": "作品动态",
+    "more": "更多作品"
+  }
+}

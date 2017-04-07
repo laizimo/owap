@@ -1,0 +1,28 @@
+<div class="login_div" hidden>
+  <div class="login">
+    <div class="login-header">
+      <a href="#">
+        <img src="assets/images/logo.png" alt="logo" class="logo">
+      </a>
+      <a href="#" class="btn">登录</a>
+      <span class="ruc-dialog-close" (click)="login_close()"><a></a></span>
+    </div>
+    <form #form="ngForm" (ngSubmit)="form.form.valid && doLogin()" novalidate class="login-content">
+      <div class="input-group username" [ngClass]="{'has-error':form.submitted &&!username.valid}">
+        <span><i class="icon"></i></span>
+        <input required maxlength="15" type="text" name="username" [(ngModel)]="user.username" #username="ngModel" placeholder="用户名" class="form-control input" aria-describedby="username-label">
+        <div *ngIf="form.submitted && !username.valid" class="text-danger">用户名必须输入，且不能超过15位！</div>
+      </div>
+      <div class="input-group password" [ngClass]="{'has-error':form.submitted && !password.valid}">
+        <span><i class="icon"></i></span>
+        <input required minlength="8" type="password" name="username" [(ngModel)]="user.password" #password="ngModel" placeholder="密码" class="form-control input" aria-describedby="password-label">
+        <div *ngIf="form.submitted && !password.valid" class="text-danger">密码必须输入，且不能少于8位</div>
+      </div>
+      <div *ngIf="error" class="col-sm-offset-2 col-sm-10 alert alert-danger">{{error}}</div>
+      <div class="login-submit">
+        <button type="submit" class="btn login-btn">立即登录</button>
+      </div>
+    </form>
+    <div class="login-footer"></div>
+  </div>
+</div>
